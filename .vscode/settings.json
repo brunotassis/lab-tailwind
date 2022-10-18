@@ -1,0 +1,12 @@
+{
+    /* CSS Files Consfigurations */
+    "css.validate"            : false,
+
+    /* SCSS Files Consfigurations */
+    "scss.lint.unknownAtRules": "ignore",
+
+    /* Editor configurations */
+    "editor.quickSuggestions" : {
+        "strings": true
+      }
+}
