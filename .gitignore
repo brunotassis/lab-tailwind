@@ -1,5 +1,6 @@
 # Files
 *.log
+public/assets/css/styles.css
 
 # Directories
 /node_modules/
