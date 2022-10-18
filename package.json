@@ -1,0 +1,12 @@
+{
+  "name": "lab-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": ""
+  },
+  "keywords": [],
+  "author": "Bruno Assis de Tassis <brunotassis@gmail.com>",
+  "license": "ISC"
+}
