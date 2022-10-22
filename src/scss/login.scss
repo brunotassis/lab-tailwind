@@ -1,0 +1,58 @@
+.login-wrapper {
+    @apply bg-blue-700 bg-gradient-to-b from-blue-600 flex items-center justify-center;
+}
+
+.login-box {
+    @apply flex;
+}
+
+.login-banner {
+    /* Formatação base do banner */
+    @apply hidden;
+
+    /* Formatação do banner para telas largura acima de 1024px */
+    @apply lg:flex lg:h-96 lg:w-64 lg:bg-blue-900 lg:rounded-bl lg:rounded-tl;
+}
+
+.login-form {
+    /* Formatação base do formulário */
+    @apply h-96 py-2 px-4 flex flex-col bg-white lg:rounded-tl-none rounded;
+
+    /* Ajuste da borda para exibição do banner em telas com largura acima de 1024px */
+    @apply lg:rounded-bl-none lg:rounded-tr lg:rounded-br;
+}
+
+.form-title {
+    @apply text-blue-300 text-center text-xl pt-2 font-sans;
+}
+
+.form-subtitle {
+    @apply my-3 flex flex-col;
+    @apply text-center text-gray-500;
+}
+
+.form-inputs {
+    @apply mt-10 space-y-6;
+}
+
+.input-group {
+    @apply flex flex-col;
+}
+
+.input-group > input {
+    @apply outline-none;
+}
+
+.input-group > input::placeholder {
+    @apply text-gray-400;
+}
+
+.input-group > input[type='text'],
+.input-group > input[type='password'] {
+    @apply pl-1 border-b border-gray-300;
+}
+
+.input-group > input[type='button'],
+.input-group > input[type='submit'] {
+    @apply mt-2 cursor-pointer text-white bg-blue-500 py-1 rounded-sm;
+}
