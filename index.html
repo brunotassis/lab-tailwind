@@ -5,11 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>COMPONENTS</title>
+
+    <link rel="stylesheet" href="./public/assets/css/styles.css">
 </head>
 
 <body>
-    
+    <div class="wrapper">
+        <header class="header">
+            <div class="brand">
+                <div class="brand-labels">
+                    <span class="company-name">COMPANY</span>
+                    <span class="company-system-name">SYSTEM NAME</span>
+                </div>
+
+                <button type="button" id="sidebarButton" name="sidebarButton" class="brand-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <aside class="sidebar"></aside>
+            <div class="content"></div>
+        </main>
+
+        <footer class="footer">
+            <div class="copy">
+                <span class="company-system-name">SYSTEM NAME</span>
+            </div>
+
+            <div class="right">
+                <span>&#169;</span>
+                <span class="company-name"></span>
+                <span>|</span>
+                <span class="year">YEAR</span>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="incompatible-display">
+        <span>
+            A largura do seu navegador não é compativel com este sistema.
+        </span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const COMPANY_NAME = 'COMPANY'
+            const COMPANY_SYSTEM_NAME = 'Company System Name'
+            const YEAR = new Date().getUTCFullYear();
+
+            document.querySelectorAll('.company-name')
+                .forEach(function (element) {
+                    element.textContent = COMPANY_NAME;
+                })
+
+            document.querySelectorAll('.company-system-name')
+                .forEach(function (element) {
+                    element.textContent = COMPANY_SYSTEM_NAME;
+                })
+
+            document.querySelectorAll('.year')
+                .forEach(function (element) {
+                    element.textContent = YEAR;
+                })
+
+            let buttonToggle = document.querySelector('#sidebarButton');
+
+            buttonToggle.addEventListener('click', function (params) {
+                console.log('Fui Clicado!');
+                document.querySelector('.sidebar').classList.toggle('collapsed')
+            })
+        });
+    </script>
 </body>
 
 </html>

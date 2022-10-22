@@ -1,4 +1,21 @@
+@import './reset.scss';
+@import './header.scss';
+@import './main.scss';
+@import './footer.scss';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.incompatible-display {
+    @apply bg-gray-800 bg-opacity-75 h-full w-full flex flex-col items-center justify-center md:hidden;
+}
+
+.incompatible-display > span {
+    @apply text-center text-white;
+}
+
+.wrapper {
+    @apply h-full w-full hidden md:flex flex-col;
+}
 

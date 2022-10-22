@@ -1,0 +1,11 @@
+.footer {
+    @apply h-8 flex justify-between border-t border-blue-200 bg-blue-500;
+}
+
+.footer > .copy {
+    @apply h-full flex items-center pl-2 pr-1 space-x-1 text-white text-sm;
+}
+
+.footer > .right {
+    @apply h-full flex items-center pl-2 pr-1 space-x-1 text-white text-sm;
+}
