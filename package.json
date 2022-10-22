@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build-css": "tailwindcss build src/scss/styles.scss -o public/assets/css/styles.css",
-    "build-css:watch": "npx tailwindcss -i src/scss/styles.scss -o public/assets/css/styles.css --watch"
+    "build-css:watch": "npx tailwindcss -i src/scss/styles.scss -o public/assets/css/styles.css --watch",
+    "build-css:prod": "npx tailwindcss public/assets/css/styles.css -o public/assets/css/styles.min.css --minify"
   },
   "keywords": [],
   "author": "Bruno Tassis e Renato Nunes",
